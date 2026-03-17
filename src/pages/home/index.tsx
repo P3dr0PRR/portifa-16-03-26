@@ -2,6 +2,7 @@ import { Nav } from "../../components/nav";
 import { Hero } from "../../components/hero";
 import { About } from "../../components/about";
 import { Projects } from "../../components/projectCard";
+import { Habilidades } from "../../components/skillTag";
 export function Home() {
   return (
     <div>
@@ -10,6 +11,7 @@ export function Home() {
         <Hero />
         <About />
         <Projects />
+        <Habilidades />
       </section>
     </div>
   );

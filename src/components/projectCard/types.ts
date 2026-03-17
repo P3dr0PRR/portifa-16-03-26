@@ -5,12 +5,12 @@ export type ProjectType =
   | "UI_FRONT_END";
 
 export interface Project {
-  featured: any;
   type: ProjectType;
   name: string;
   description: string;
   techs: string[];
   link: string;
+  featured?: boolean;
 }
 
 export const projects: Project[] = [
