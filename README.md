@@ -35,6 +35,8 @@ src/components/
 ├── hero/
 │ ├── index.tsx
 │ └── types.ts
+├── about/
+│ ├── index.tsx
 ├── projectCard/
 │ ├── index.tsx
 │ └── types.ts

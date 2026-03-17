@@ -1,7 +1,7 @@
 import { AppRoutes } from "./routes";
 function App() {
   return (
-    <main>
+    <main className="cursor-default">
       <AppRoutes />
     </main>
   );
