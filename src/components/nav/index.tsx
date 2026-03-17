@@ -1,12 +1,22 @@
 export function Nav() {
   return (
     <nav className="flex bg-black border-b border-gray-300 flex-col md:flex-row items-center justify-between px-6 py-3 gap-3 md:gap-0">
-      <h1 className="text-4xl text-[#0ff] font-bold shrink-0">Pedro Paulo</h1>
+      <h1 className="text-4xl text-indigo-400 font-bold shrink-0">
+        Pedro Paulo
+      </h1>
       <ul className="flex w-full justify-between md:w-auto md:gap-6 md:text-lg">
         <li>
           <a
+            href="#sobre"
+            className="text-gray-300 hover:text-gray-100 transition-colors"
+          >
+            Sobre
+          </a>
+        </li>
+        <li>
+          <a
             href="#projetos"
-            className="text-gray-300 hover:text-[#0ff] transition-colors"
+            className="text-gray-300 hover:text-gray-100 transition-colors"
           >
             Projetos
           </a>
@@ -14,7 +24,7 @@ export function Nav() {
         <li>
           <a
             href="#skills"
-            className="text-gray-300 hover:text-[#0ff] transition-colors"
+            className="text-gray-300 hover:text-gray-100 transition-colors"
           >
             Skills
           </a>
@@ -22,7 +32,7 @@ export function Nav() {
         <li>
           <a
             href="#contato"
-            className="text-gray-300 hover:text-[#0ff] transition-colors"
+            className="text-gray-300 hover:text-gray-100 transition-colors"
           >
             Contato
           </a>
