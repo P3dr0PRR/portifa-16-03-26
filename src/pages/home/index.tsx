@@ -3,6 +3,7 @@ import { Hero } from "../../components/hero";
 import { About } from "../../components/about";
 import { Projects } from "../../components/projectCard";
 import { Habilidades } from "../../components/skillTag";
+import { Contato } from "../../components/contato";
 export function Home() {
   return (
     <div>
@@ -12,6 +13,7 @@ export function Home() {
         <About />
         <Projects />
         <Habilidades />
+        <Contato />
       </section>
     </div>
   );
