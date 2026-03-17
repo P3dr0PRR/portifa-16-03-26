@@ -12,8 +12,11 @@ export function Hero() {
       </div>
 
       <h2 className="text-4xl md:text-5xl font-bold font-['Syne'] text-white max-w-xl leading-tight">
-        Construindo interfaces que{" "}
-        <span className="text-indigo-400">fazem sentido</span>
+        Construindo interfaces que
+        <br />
+        <span className="text-5xl md:text-6xl text-indigo-400">
+          fazem sentido
+        </span>
       </h2>
 
       <p className="text-gray-300 max-w-lg font-['DM Sans'] font-light leading-relaxed">

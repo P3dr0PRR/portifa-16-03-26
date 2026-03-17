@@ -2,7 +2,7 @@ import { ABOUT_STATS } from "../../constants/about";
 
 export function About() {
   return (
-    <div className="flex flex-col justify-start gap-4 px-6 py-12 md:px-16 md:py-20">
+    <section className="flex flex-col justify-start gap-4 px-6 py-12 md:px-16 md:py-20">
       <p className="font-bold font-['Syne'] text-indigo-400 max-w-xl leading-tight">
         Sobre mim
       </p>
@@ -34,6 +34,6 @@ export function About() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
