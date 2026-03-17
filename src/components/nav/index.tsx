@@ -1,10 +1,10 @@
 export function Nav() {
   return (
     <nav className="flex bg-black border-b border-gray-300 flex-col md:flex-row items-center justify-between px-6 py-3 gap-3 md:gap-0">
-      <h1 className="text-4xl text-indigo-400 font-bold shrink-0">
+      <h1 className="text-4xl text-indigo-400 font-bold font-['Syne'] shrink-0">
         Pedro Paulo
       </h1>
-      <ul className="flex w-full justify-between md:w-auto md:gap-6 md:text-lg">
+      <ul className="flex w-full justify-between md:w-auto md:gap-6 md:text-lg font-['DM Sans'] font-light">
         <li>
           <a
             href="#sobre"
