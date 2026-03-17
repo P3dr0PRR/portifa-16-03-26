@@ -4,6 +4,8 @@ import { About } from "../../components/about";
 import { Projects } from "../../components/projectCard";
 import { Habilidades } from "../../components/skillTag";
 import { Contato } from "../../components/contato";
+import { Footer } from "../../components/footer";
+
 export function Home() {
   return (
     <div>
@@ -15,6 +17,7 @@ export function Home() {
         <Habilidades />
         <Contato />
       </section>
+      <Footer />
     </div>
   );
 }
