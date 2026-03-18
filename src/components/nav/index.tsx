@@ -1,10 +1,10 @@
 export function Nav() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 flex bg-black border-b border-gray-300 flex-col md:flex-row items-center justify-between px-6 py-3 gap-3 md:gap-0">
-      <h1 className="text-4xl text-indigo-400 font-bold font-['Syne'] shrink-0">
+      <h1 className="text-4xl text-indigo-400 font-bold font-['Syne'] shrink-0 space-y-3">
         Pedro Paulo
       </h1>
-      <ul className="flex w-full justify-between md:w-auto md:gap-6 md:text-lg font-['DM Sans'] font-light">
+      <ul className="flex text-sm md:text-md w-full justify-between md:w-auto md:gap-6 md:text-lg font-['DM Sans'] font-light">
         <li>
           <a
             href="#sobre"
