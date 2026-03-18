@@ -1,5 +1,6 @@
 import { HeaderProjs } from "./header";
 import { HeroProjs } from "./hero";
+import { Projs } from "./projects";
 export function ProjectsPageContent() {
   return (
     <section
@@ -8,6 +9,7 @@ export function ProjectsPageContent() {
     >
       <HeaderProjs />
       <HeroProjs />
+      <Projs />
     </section>
   );
 }
