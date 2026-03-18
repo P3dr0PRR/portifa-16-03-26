@@ -12,3 +12,6 @@ code,
 pre {
   font-family: "Fira Code", "Inconsolata", monospace;
 }
+html {
+  scroll-behavior: smooth;
+}

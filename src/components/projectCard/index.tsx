@@ -2,7 +2,10 @@ import { projects, type Project } from "./types";
 
 export function Projects() {
   return (
-    <section className="flex flex-col justify-start gap-4 px-6 py-12 md:px-16 md:py-20">
+    <section
+      id="projetos"
+      className="flex flex-col justify-start gap-4 px-6 py-12 md:px-16 md:py-20"
+    >
       <p className="font-bold font-['Syne'] text-indigo-400 max-w-xl leading-tight">
         Projetos
       </p>

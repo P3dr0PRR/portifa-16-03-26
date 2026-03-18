@@ -2,7 +2,10 @@ import { SKILLS, type Skill } from "./types";
 
 export function Habilidades() {
   return (
-    <section className="flex flex-col justify-start gap-4 px-6 py-12 md:px-16 md:py-20">
+    <section
+      id="skills"
+      className="flex flex-col justify-start gap-4 px-6 py-12 md:px-16 md:py-20"
+    >
       <p className="font-bold font-['Syne'] text-indigo-400 max-w-xl leading-tight">
         Habilidades
       </p>
