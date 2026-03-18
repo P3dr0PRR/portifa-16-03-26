@@ -1,6 +1,6 @@
 export function HeroProjs() {
   return (
-    <section className="flex flex-col justify-start gap-4 px-6 md:px-16 py-20">
+    <section className="flex flex-col justify-start gap-4 px-6 md:px-16 pt-10">
       <p className="font-bold font-['Syne'] text-indigo-400 max-w-xl leading-tight">
         Portfólio
       </p>

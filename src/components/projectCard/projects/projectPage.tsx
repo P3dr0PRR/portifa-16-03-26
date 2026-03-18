@@ -1,15 +1,17 @@
 import { HeaderProjs } from "./header";
 import { HeroProjs } from "./hero";
 import { Projs } from "./projects";
+import { Footer } from "../../footer";
+
 export function ProjectsPageContent() {
   return (
-    <section
-      id="projetos"
-      className=" min-h-screen bg-black flex flex-col justify-start gap-4 px-6 py-12 md:px-16 md:py-20"
-    >
+    <div>
       <HeaderProjs />
-      <HeroProjs />
-      <Projs />
-    </section>
+      <section className=" min-h-screen bg-black flex flex-col justify-start gap-4 px-6 pt-10 md:px-16 md:pt-20">
+        <HeroProjs />
+        <Projs />
+      </section>
+      <Footer />
+    </div>
   );
 }
