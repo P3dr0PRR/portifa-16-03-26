@@ -9,7 +9,7 @@ export function HeaderProjs() {
       </h1>
       <Link
         to="/#inicio"
-        className="text-gray-300 hover:text-white transition-colors duration-300 flex gap-2 hover:scale-105 transform duration-300 cursor-pointer"
+        className="text-gray-300 hover:text-white transition-colors duration-300 flex gap-2 hover:scale-105 transform cursor-pointer"
       >
         <Undo2 className="w-5 h-5" />
         <p>Início</p>
