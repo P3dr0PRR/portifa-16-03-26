@@ -10,13 +10,13 @@ export function Projects() {
         Projetos
       </p>
       <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-['Syne'] text-white max-w-xl leading-tight">
-        O que já contruí
+        O que já construí
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project: Project) => (
           <div
             key={project.name}
-            className={`flex flex-col items-start justify-between bg-gray-800 border border-gray-600 p-6 text-white rounded-md gap-4 ${
+            className={`flex flex-col items-start justify-between bg-gray-800 border-2 border-gray-600 p-6 hover:border-l-indigo-400 text-white rounded-md gap-4 ${
               project.featured ? "md:col-span-2" : ""
             }`}
           >
@@ -53,7 +53,7 @@ export function Projects() {
         ))}
       </div>
       <div className=" flex items-center justify-center">
-        <button className="text-xl md:text-2xl lg:text-3xl font-bold font-['Syne'] text-indigo-400 max-w-xl leading-tight cursor-pointer hover:scale-105 transition-transform duration-300 ">
+        <button className="bg-gray-800 border-2 border-indigo-400 p-4 md:p-5 rounded-md text-center text-xl md:text-2xl lg:text-3xl font-bold font-['Syne'] text-gray-300 max-w-xl leading-tight cursor-pointer hover:scale-105 transition-transform duration-300 ">
           Ver Todos
         </button>
       </div>
