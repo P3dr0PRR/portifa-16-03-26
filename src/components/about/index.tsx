@@ -29,7 +29,7 @@ export function About() {
           {ABOUT_STATS.map((item) => (
             <div
               key={item.label}
-              className="flex min-h-28 flex-col items-center justify-center bg-gray-800 border border-gray-600 p-4 md:p-5 text-white rounded-md text-center"
+              className="flex min-h-28 flex-col items-center justify-center bg-gray-800 border border-gray-600 hover:border-l-2 hover:border-l-indigo-400 p-4 md:p-5 text-white rounded-md text-center"
             >
               <p className="text-2xl font-bold text-indigo-400">{item.value}</p>
               <p className="text-gray-300 text-sm md:text-base">{item.label}</p>
