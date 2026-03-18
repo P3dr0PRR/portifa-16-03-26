@@ -18,6 +18,6 @@ export const REDES: Ctt[] = [
 ];
 
 export const MEIOS: Ctt[] = [
-  { forma: "Email", link: "mailto:pedropaulo@interlinksistemas.com.br" },
+  { forma: "Email", link: "pedropaulo@interlinksistemas.com.br" },
   { forma: "Celular", numero: "(34) 99796-7512" },
 ];
