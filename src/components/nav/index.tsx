@@ -5,12 +5,20 @@ export function Nav() {
         Pedro Paulo
       </h1>
       <ul className="flex text-sm md:text-md w-full justify-between md:w-auto md:gap-6 md:text-lg font-['DM Sans'] font-light">
-        <li>
+        <li className="hidden md:block">
           <a
             href="#sobre"
             className="text-gray-300 hover:text-gray-100 transition-colors"
           >
             Sobre
+          </a>
+        </li>
+        <li className="block md:hidden">
+          <a
+            href="#inicio"
+            className="text-gray-300 hover:text-gray-100 transition-colors"
+          >
+            Inicio
           </a>
         </li>
         <li>
