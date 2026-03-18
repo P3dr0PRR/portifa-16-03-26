@@ -56,6 +56,7 @@ export function ProjectsPreview() {
       <div className=" flex items-center justify-center">
         <Link
           to="/projetos"
+          onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "auto" })}
           className="bg-gray-800 border-2 border-indigo-400 p-4 md:p-5 rounded-md text-center text-xl md:text-2xl lg:text-3xl font-bold font-['Syne'] text-gray-300 max-w-xl leading-tight cursor-pointer hover:scale-105 transition-transform duration-300 "
         >
           Ver Todos
