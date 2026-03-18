@@ -1,6 +1,9 @@
 export function Hero() {
   return (
-    <section className="flex flex-col justify-start gap-4 px-6 py-12 md:px-16 md:py-20">
+    <section
+      id="inicio"
+      className="flex flex-col justify-start gap-4 px-6 py-12 md:px-16 md:py-20"
+    >
       <div className="flex items-center gap-2 bg-indigo-500/40 border border-indigo-400 rounded-md p-2 w-max">
         <span className="relative flex h-2 w-2">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>

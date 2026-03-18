@@ -1,6 +1,6 @@
 export interface Skill {
-  name: string
-  highlight?: boolean
+  name: string;
+  highlight?: boolean;
 }
 
 export const SKILLS = [
@@ -20,4 +20,4 @@ export const SKILLS = [
   { name: "Manipulação do DOM" },
   { name: "Inglês avançado" },
   { name: "ADS" },
-]
+];
