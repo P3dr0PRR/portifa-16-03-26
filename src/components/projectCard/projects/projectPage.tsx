@@ -1,7 +1,7 @@
-import { HeaderProjs } from "./header";
-import { HeroProjs } from "./hero";
-import { Projs } from "./projects";
-import { Footer } from "../../footer";
+import { HeaderProjs } from "./header/headerProjs";
+import { HeroProjs } from "./hero/heroProjs";
+import { Projs } from "./projetosFin/ProjDesc";
+import { Footer } from "../../footer/footer";
 
 export function ProjectsPageContent() {
   return (

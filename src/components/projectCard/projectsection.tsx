@@ -1,8 +1,18 @@
-import { projects, type Project } from "../../types";
-export function Projs() {
+import { Link } from "react-router-dom";
+import { projects, type Project } from "./projectsectionTypes";
+
+export function ProjectsPreview() {
   return (
-    <section className="flex flex-col justify-start gap-4 px-6 py-12 md:px-16 md:py-20">
-      <p className="text-gray-300">{projects.length} projetos</p>
+    <section
+      id="projetos"
+      className="flex flex-col justify-start gap-4 px-6 py-12 md:px-16 md:py-20"
+    >
+      <p className="font-bold font-['Syne'] text-indigo-400 max-w-xl leading-tight">
+        Projetos
+      </p>
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-['Syne'] text-white max-w-xl leading-tight">
+        O que já construí
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project: Project) => (
           <div
@@ -42,6 +52,15 @@ export function Projs() {
             </button>
           </div>
         ))}
+      </div>
+      <div className=" flex items-center justify-center">
+        <Link
+          to="/projetos"
+          onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "auto" })}
+          className="bg-gray-800 border-2 border-indigo-400 p-4 md:p-5 rounded-md text-center text-xl md:text-2xl lg:text-3xl font-bold font-['Syne'] text-gray-300 max-w-xl leading-tight cursor-pointer hover:scale-105 transition-transform duration-300 "
+        >
+          Ver Todos
+        </Link>
       </div>
     </section>
   );

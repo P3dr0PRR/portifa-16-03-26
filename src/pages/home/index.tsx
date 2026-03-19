@@ -1,10 +1,10 @@
-import { Nav } from "../../components/nav";
-import { Hero } from "../../components/hero";
-import { About } from "../../components/about";
-import { ProjectsPreview } from "../../components/projectCard";
+import { Nav } from "../../components/nav/nav";
+import { Hero } from "../../components/hero/hero";
+import { About } from "../../components/about/about";
+import { ProjectsPreview } from "../../components/projectCard/projectsection";
 import { Habilidades } from "../../components/skillTag";
-import { Contato } from "../../components/contato";
-import { Footer } from "../../components/footer";
+import { Contato } from "../../components/contato/contato";
+import { Footer } from "../../components/footer/footer";
 
 export function Home() {
   return (

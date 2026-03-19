@@ -1,4 +1,4 @@
-import { MEIOS, REDES, type Ctt } from "./types";
+import { MEIOS, REDES, type Ctt } from "./contatoTypes";
 
 export function Contato() {
   return (

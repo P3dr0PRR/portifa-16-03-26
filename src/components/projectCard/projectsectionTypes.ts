@@ -5,6 +5,7 @@ export type ProjectType =
   | "UI_FRONT_END";
 
 export interface Project {
+  slug: string;
   type: ProjectType;
   name: string;
   description: string;
@@ -29,6 +30,7 @@ export const projects: Project[] = [
       "Vite",
     ],
     link: "https://clipmaker-five.vercel.app/",
+    slug: "ClipmakerPage",
   },
   {
     type: "APLICACAO_WEB",
@@ -37,6 +39,7 @@ export const projects: Project[] = [
       "Quiz inteligente que recomenda o melhor meio de transporte para uma viagem com base em 15 perguntas sobre distancia, orcamento, conforto e preferencias.",
     techs: ["React 18", "JavaScript", "Tailwind CSS", "React Router", "Vite"],
     link: "https://best-trip-methods-pot1.vercel.app/",
+    slug: "BesttripmethodsPage",
   },
   {
     type: "FRONT_END",
@@ -45,6 +48,8 @@ export const projects: Project[] = [
       "Perfil de viajante em rede social ficticia. Componentizacao, galeria de destinos e layout responsivo com React 19 + TypeScript + Tailwind 4.",
     techs: ["React 19", "TypeScript", "Tailwind CSS 4", "Vite"],
     link: "https://travelgram-murex-beta.vercel.app/",
+    slug: "TravelgramPage",
+
   },
   {
     type: "UI_FRONT_END",
@@ -53,5 +58,6 @@ export const projects: Project[] = [
       "Pagina de receita culinaria com foco em layout visual, organizacao de conteudo e responsividade. Interface moderna e semantica com utility-first CSS.",
     techs: ["React 19", "Tailwind CSS 4", "Vite"],
     link: "https://pagina-de-receitas-rho.vercel.app/",
+    slug: "PaginadereceitasPage",
   },
 ];
