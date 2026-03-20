@@ -12,6 +12,12 @@ export interface Project {
   techs: string[];
   link: string;
   featured?: boolean;
+  img: string;
+  about: string;
+  aprendizado: string[];
+  status: string;
+  ano: number;
+  tipo: string;
 }
 
 export const projects: Project[] = [
@@ -29,35 +35,96 @@ export const projects: Project[] = [
       "GSAP",
       "Vite",
     ],
+    aprendizado: [
+      "Padronização da arquitetura front-end para garantir consistência entre projetos.",
+      "Organização clara de pastas por responsabilidade (rotas, componentes, hooks, utils, tipos, fluxos).",
+      "Uso correto do App Router do Next.js com arquivos específicos (page, layout, template, loading, error, not-found).",
+      "Padronização de requisições via actions e uso de React Query no cliente.",
+      "Qualidade de código com lint, testes automatizados e Husky no fluxo de commit.",
+      "Governança de Git com strategy de branches, commits padronizados em português e PR com revisão.",
+      "Cultura de testes (unitários e e2e) e CI/CD para validar e publicar com segurança.",
+    ],
     link: "https://clipmaker-five.vercel.app/",
     slug: "ClipmakerPage",
+    img: "/imgs/Clipmaker.png",
+    about:
+      "O ClipMaker é um MVP focado em transformar conteúdos longos em cortes curtos com apoio de IA. O projeto nasceu como prática de React + TypeScript e evoluiu para uma aplicação funcional com transcrição automática, integração com modelo generativo, fluxo de chave de API e interface orientada à produtividade. O objetivo foi ir além de uma demo técnica e construir uma experiência mais próxima de produto real, com decisões de UX, organização de componentes e uma base preparada para evoluir com novas features, como filtros de corte, exportação e refinamento de resultados.",
+    status: "Online",
+    ano: 2025,
+    tipo: "projeto de curso · NLW Rocketseat",
   },
+
   {
     type: "APLICACAO_WEB",
     name: "Best Trip Methods",
     description:
       "Quiz inteligente que recomenda o melhor meio de transporte para uma viagem com base em 15 perguntas sobre distancia, orcamento, conforto e preferencias.",
     techs: ["React 18", "JavaScript", "Tailwind CSS", "React Router", "Vite"],
+    aprendizado: [
+      "Estruturação de app em React com componentes funcionais e fluxo de telas (início → quiz → resultado).",
+      "Gerenciamento de estado com useState para pergunta atual, opção selecionada, pontuação e controle de etapa.",
+      "Modelagem de dados do quiz em lista de perguntas/alternativas para renderização dinâmica.",
+      "Implementação de lógica de pontuação por categoria (carro, avião, barco, trem) e decisão do resultado final.",
+      "Separação de responsabilidades entre UI (componentes) e regra de negócio (função utilitária de resultado).",
+      "Construção de interface responsiva e estilização com Tailwind CSS.",
+      "Uso de tooling moderno de front-end (Vite para build/dev, ESLint/PostCSS para qualidade e pipeline de CSS).",
+    ],
     link: "https://best-trip-methods-pot1.vercel.app/",
     slug: "BesttripmethodsPage",
+    img: "/imgs/BestTripMethods.png",
+    about:
+      "O BEST TRIP METHODS é um MVP interativo focado em recomendar a melhor forma de viagem com base no perfil e nas preferências de cada usuário. O projeto foi desenvolvido como prática em React e evoluiu para uma aplicação completa com fluxo de quiz, lógica de pontuação, cálculo de resultado personalizado e interface dinâmica do início ao fim. A proposta foi ir além de um formulário simples e construir uma experiência mais estratégica e envolvente, simulando uma decisão real de planejamento de viagem — com foco em usabilidade, organização de componentes e clareza na entrega do resultado final.",
+    status: "Online",
+    ano: 2025,
+    tipo: "Projeto de minha autoria, aprendendo React por conta própria",
   },
+
   {
     type: "FRONT_END",
     name: "Travelgram",
     description:
       "Perfil de viajante em rede social ficticia. Componentizacao, galeria de destinos e layout responsivo com React 19 + TypeScript + Tailwind 4.",
     techs: ["React 19", "TypeScript", "Tailwind CSS 4", "Vite"],
+    aprendizado: [
+      "Composição de interface com React por componentes reutilizáveis.",
+      "Organização de projeto front-end com estrutura clara de pastas.",
+      "Tipagem com TypeScript para reduzir erros e melhorar manutenção.",
+      "Montagem de página única com integração de várias seções.",
+      "Aplicação de responsividade para desktop e mobile.",
+      "Uso de Vite para ambiente de desenvolvimento rápido e build otimizado.",
+      "Padronização de código com ESLint para manter consistência.",
+    ],
     link: "https://travelgram-murex-beta.vercel.app/",
     slug: "TravelgramPage",
-
+    img: "/imgs/Travelgram.png",
+    about:
+      "O TRAVELGRAM é um MVP front-end que simula o perfil de um viajante em uma rede social de viagens. O projeto nasceu como prática de React + TypeScript e evoluiu para uma interface completa, com navegação, seção de perfil com bio e estatísticas, galeria de destinos e rodapé institucional, mantendo foco em composição visual e experiência responsiva. O objetivo foi ir além de uma página estática e construir algo que representasse um produto real — com organização por componentes, consistência de layout e base sólida para futuras evoluções, como integração com API, autenticação e interações dinâmicas.",
+    status: "Online",
+    ano: 2025,
+    tipo: "projeto de curso · Full Stack Rocketseat",
   },
+
   {
     type: "UI_FRONT_END",
     name: "Pagina de Receitas",
     description:
       "Pagina de receita culinaria com foco em layout visual, organizacao de conteudo e responsividade. Interface moderna e semantica com utility-first CSS.",
     techs: ["React 19", "Tailwind CSS 4", "Vite"],
+    aprendizado: [
+      "Composição de interface em React com cOrganização da aplicação por seções (header, perfil, galeria e footer).",
+      "Uso de TypeScript para tipagem e maior segurança no código.",
+      "Estilização com Tailwind CSS 4 focada em produtividade.",
+      "Construção de layout responsivo para diferentes tamanhos de tela.",
+      "Fluxo de desenvolvimento com Vite (dev server, build e preview).",
+      "Padronização e qualidade de código com ESLint.",
+    ],
     link: "https://pagina-de-receitas-rho.vercel.app/",
     slug: "PaginadereceitasPage",
+    img: "/imgs/PaginaDeReceitas.png",
+    about:
+      "A Página de Receitas é um projeto focado em oferecer uma experiência prática e agradável para descobrir, organizar e preparar receitas no dia a dia. A aplicação foi desenvolvida com React com a visualização detalhada dos ingredientes e modo de preparo. O objetivo foi ir além de uma vitrine simples de receitas e construir algo que simulasse um produto real: com atenção à experiência do usuário, estrutura de código bem organizada e base pronta para escalar com novas funcionalidades.",
+    status: "Online",
+    ano: 2025,
+    tipo: "Full Stack Rocketseat",
   },
 ];
