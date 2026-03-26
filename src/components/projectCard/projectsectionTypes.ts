@@ -127,4 +127,28 @@ export const projects: Project[] = [
     ano: 2025,
     tipo: "Full Stack Rocketseat",
   },
+
+  {
+    type: "UI_FRONT_END",
+    name: "Portal de Notícias",
+    description:
+      "Portal de notícias com foco em layout editorial, organização de conteúdo em cards e responsividade. Interface moderna e semântica com utility-first CSS.",
+    techs: ["React 19", "Tailwind CSS 4", "TypeScript", "Vite"],
+    aprendizado: [
+      "Composição de interface em React com organização da aplicação por seções (header, feed de notícias, destaques e footer).",
+      "Uso de TypeScript para tipagem de dados e maior segurança no código.",
+      "Estilização com Tailwind CSS 4 focada em produtividade e consistência visual.",
+      "Construção de layout responsivo com grid e flexbox para diferentes tamanhos de tela.",
+      "Estruturação de componentes reutilizáveis como cards de notícia e badges de categoria.",
+      "Fluxo de desenvolvimento com Vite (dev server, build e preview).",
+    ],
+    link: "https://portaldenoticias-gamma.vercel.app/",
+    slug: "PortalDeNoticiasPage",
+    img: "/imgs/PortalDeNoticias.png",
+    about:
+      "O Portal de Notícias é um projeto focado em apresentar conteúdo jornalístico de forma organizada e visualmente agradável. A aplicação foi desenvolvida com React e simula um produto editorial real: com hierarquia de notícias, categorização de conteúdo e atenção à experiência de leitura. O objetivo foi construir uma interface limpa e bem estruturada, com código organizado e base pronta para integrar com uma API de notícias futuramente.",
+    status: "Online",
+    ano: 2026,
+    tipo: "Full Stack Rocketseat",
+  },
 ];
