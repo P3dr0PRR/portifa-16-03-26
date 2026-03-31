@@ -151,4 +151,30 @@ export const projects: Project[] = [
     ano: 2026,
     tipo: "Full Stack Rocketseat",
   },
+
+  {
+    type: "APLICACAO_WEB",
+    name: "Formulário de Matrícula",
+    description:
+      "Aplicação web para cadastro de alunos, responsável e endereço residencial, com validação de dados e etapas dinâmicas.",
+    techs: ["React 18", "TypeScript", "Vite", "CSS Modules", "ESLint"],
+    aprendizado: [
+      "Estruturação de formulário multi-etapas usando componentes funcionais em React.",
+      "Uso do map para renderizar dinamicamente campos de opções de matrícula e etapas do formulário.",
+      "Gerenciamento de estado com useState para controle dos dados do aluno, responsável e endereço.",
+      "Validação de campos obrigatórios e feedback visual para o usuário.",
+      "Separação de componentes por responsabilidade (área do formulário, header, botões de finalização, etc).",
+      "Estilização modularizada com CSS Modules para evitar conflitos de classe.",
+      "Integração de assets e ícones personalizados na interface.",
+      "Configuração de ambiente moderno com Vite e TypeScript para tipagem estática e build rápido.",
+    ],
+    link: "https://formulariodematricula.vercel.app/",
+    slug: "FormularioMatriculaPage",
+    img: "/imgs/formulario_de_matricula.png",
+    about:
+      "O Formulário de Matrícula é uma aplicação desenvolvida em React e TypeScript para facilitar o processo de inscrição escolar. O projeto utiliza o map para gerar listas de opções de matrícula e etapas do formulário, tornando o código mais escalável e reutilizável. Cada etapa do formulário é um componente independente, promovendo organização e clareza. O foco foi criar uma experiência fluida, com validação de dados, feedback visual e interface responsiva, além de aplicar boas práticas de componentização e tipagem.",
+    status: "Online",
+    ano: 2026,
+    tipo: "Projeto autoral para prática de React e TypeScript",
+  },
 ];
