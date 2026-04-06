@@ -44,12 +44,12 @@ export function ProjectDetailsPage() {
         <p className="text-gray-300 max-w-lg font-['DM Sans'] font-light leading-relaxed">
           {project.description}
         </p>
-        <div className="relative border border-gray-300 rounded-md h-full min-h-[600px]">
+        <div className="relative border border-gray-300 rounded-md">
           {project.img && (
             <img
               src={project.img}
               alt={project.name}
-              className="absolute inset-0 w-full h-full object-cover rounded-md"
+              className="w-full h-auto block rounded-md p-2"
             />
           )}
           <div className="hidden md:block absolute bottom-0 left-0 py-4 px-8 z-10">
