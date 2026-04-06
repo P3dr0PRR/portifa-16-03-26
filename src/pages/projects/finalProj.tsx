@@ -44,15 +44,15 @@ export function ProjectDetailsPage() {
         <p className="text-gray-300 max-w-lg font-['DM Sans'] font-light leading-relaxed">
           {project.description}
         </p>
-        <div className="border border-gray-300 rounded-md h-full min-h-[600px]">
+        <div className="relative border border-gray-300 rounded-md h-full min-h-[600px]">
           {project.img && (
             <img
               src={project.img}
               alt={project.name}
-              className="w-full h-full object-cover rounded-md shadow-lg"
+              className="absolute inset-0 w-full h-full object-cover rounded-md"
             />
           )}
-          <div className="hidden md:block py-4 px-8">
+          <div className="hidden md:block absolute bottom-0 left-0 py-4 px-8 z-10">
             <div className="flex items-center gap-2 bg-emerald-500/40 border border-emerald-400 rounded-md p-2 w-max">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
