@@ -177,4 +177,37 @@ export const projects: Project[] = [
     ano: 2026,
     tipo: "Projeto autoral para prática de React e TypeScript",
   },
+  {
+    type: "DESTAQUE",
+    name: "Zingen",
+    description:
+      "Aplicação web de karaokê que utiliza IA para remover vozes de músicas e disponibilizar a maior biblioteca de instrumentais. O usuário acessa uma vasta coleção de músicas e pode cantar em tempo real, com opções de planos grátis e premium.",
+    techs: [
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS 4",
+      "Vite",
+      "React DOM 19",
+      "SWC (transpilador ultrarrápido)",
+      "ESLint",
+    ],
+    aprendizado: [
+      "Implementação com React 19 e TypeScript para código tipado e seguro.",
+      "Estilização responsiva com Tailwind CSS 4 via integração Vite.",
+      "Componentes estruturados por funcionalidade (Header, HeroSection, Features, Planos, Download, Footer).",
+      "Design de landing page com múltiplas seções (hero, features, pricing, CTA).",
+      "Aplicação de gradientes customizados e tema com paleta de cores consistente.",
+      "Build otimizado com Vite e SWC para performance em produção.",
+      "Linting com ESLint para manutenção de qualidade de código.",
+      "Responsividade mobile-first com breakpoints (sm, md, lg, xl).",
+    ],
+    link: "https://projetozingen01042026.vercel.app/",
+    slug: "ZingenApp",
+    img: "/imgs/ZIngen.png",
+    about:
+      "Zingen é um MVP focado em democratizar o acesso ao karaokê através de uma plataforma web moderna. A aplicação combina uma biblioteca expansível de músicas com tecnologia de remoção de voz por IA, permitindo que qualquer pessoa cante suas músicas favoritas sem barreiras. O projeto foi construído com foco em UX, oferecendo planos diferenciados (básico gratuito e premium) e uma interface intuitiva. A arquitetura garante escalabilidade para futuras features como social sharing, histórico de gravações, desafios entre usuários e integração com redes sociais.",
+    status: "Em Desenvolvimento",
+    ano: 2026,
+    tipo: "projeto pessoal · prática de React + TypeScript",
+  },
 ];
