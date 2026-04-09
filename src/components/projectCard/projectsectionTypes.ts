@@ -210,4 +210,35 @@ export const projects: Project[] = [
     ano: 2026,
     tipo: "projeto pessoal · prática de React + TypeScript",
   },
+  {
+    type: "DESTAQUE",
+    name: "Doc Analyzer",
+    description:
+      "Aplicação web que utiliza o Gemini (Google AI) para extrair informações de documentos PDF automaticamente. O usuário envia o arquivo, a IA analisa o conteúdo e retorna Nome, Data de Validade e Categoria extraídas com precisão.",
+    techs: [
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS 4",
+      "Gemini 2.5 Flash",
+      "Google GenAI",
+      "Vite",
+    ],
+    aprendizado: [
+      "Integração com APIs de IA generativa (Gemini/Google GenAI) para processamento de documentos.",
+      "Upload e manipulação de arquivos PDF no frontend com validação de tipos.",
+      "Gerenciamento de estado com React Hooks para fluxos assíncronos complexos.",
+      "Segurança de dados — mantendo API keys do usuário sem armazenamento de dados pessoais.",
+      "Construção de interfaces responsivas com Tailwind CSS 4 e componentes reutilizáveis.",
+      "Configuração de build otimizado com Vite e TypeScript para melhor performance e type-safety.",
+      "Tratamento robusto de erros e feedback visual durante processamento de IA.",
+    ],
+    link: "https://docanalizer08042026.vercel.app/",
+    slug: "DocAnalyzerPage",
+    img: "/imgs/DocAnalyzer.png",
+    about:
+      "O Doc Analyzer é uma ferramenta de automação que simplifica l extração de dados de documentos usando IA generativa. O projeto foi desenvolvido como prática de integração com APIs modernas de IA, manipulação de arquivos e construção de fluxos de usuário intuitivos. Nasceu da necessidade de automatizar tarefas repetitivas de processamento de documentos e evoluiu para uma aplicação funcional com extração de metadados confiável, interface limpa e preparada para escalar com novos tipos de análise e formatos de arquivo.",
+    status: "Online",
+    ano: 2026,
+    tipo: "projeto de prática · IA & Automação",
+  },
 ];
