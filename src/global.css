@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-syne: "Syne", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    @apply m-0 p-0 box-border;
+  }
+  h1 {
+    @apply text-[32px] md:text-[64px] leading-[125%] font-bold tracking-[-0.02em] font-syne;
+  }
+  h2 {
+    @apply text-[24px] md:text-[40px] leading-[120%] font-bold font-syne;
+  }
+  h3 {
+    @apply text-[14px] md:text-[16px] leading-[125%] font-semibold  font-syne;
+  }
+  p {
+    @apply text-[14px] md:text-[16px] leading-[170%] max-w-[65ch]  font-montserrat;
+  }
+  body {
+    @apply font-montserrat;
+  }
+}
