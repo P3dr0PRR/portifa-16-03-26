@@ -47,4 +47,13 @@ html {
   .ctt-meios {
     @apply font-bold text-text-secondary text-center;
   }
+  .project-card-type {
+    @apply text-indigo-400 text-xs uppercase tracking-[-0.02em];
+  }
+  .project-card-name {
+    @apply text-2xl font-bold font-syne;
+  }
+  .project-card-description {
+    @apply text-text-default text-sm leading-[170%];
+  }
 }

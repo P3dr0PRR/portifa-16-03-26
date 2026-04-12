@@ -14,22 +14,16 @@ export function Projs() {
             }`}
           >
             <div className="flex flex-col gap-2 w-full">
-              <span className="text-indigo-400 text-xs uppercase tracking-widest">
-                {project.type}
-              </span>
-              <h3 className="text-2xl font-bold font-['Syne']">
-                {project.name}
-              </h3>
-              <p className="text-gray-300 text-sm leading-relaxed">
-                {project.description}
-              </p>
+              <span className="project-card-type">{project.type}</span>
+              <h3 className="project-card-name">{project.name}</h3>
+              <p className="project-card-description">{project.description}</p>
             </div>
 
             <ul className="flex flex-wrap gap-2">
               {project.techs.map((tech: string) => (
                 <li
                   key={`${project.name}-${tech}`}
-                  className="bg-gray-600/40 border border-gray-500 text-white text-xs px-2 py-1 rounded-md"
+                  className="bg-gray-600/40 border border-gray-500 text-text-default text-xs px-2 py-1 rounded-md"
                 >
                   {tech}
                 </li>
@@ -37,22 +31,25 @@ export function Projs() {
             </ul>
 
             <div className=" w-full flex flex-col md:flex-row items-center justify-between gap-4">
-              <button
-                onClick={() => window.open(project.link, "_blank")}
-                className="text-indigo-400 text-sm hover:scale-105 transition-transform duration-300 cursor-pointer"
+                 <a
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+                className="text-text-secondary text-sm hover:scale-105 transition-transform duration-300 cursor-pointer"
               >
                 Ver projeto →
-              </button>
+              </a>
               <Link
                 to={"/projetos/" + project.slug}
                 onClick={() =>
                   window.scrollTo({ top: 0, left: 0, behavior: "auto" })
                 }
-                className="text-indigo-400 text-sm hover:scale-105 transition-transform duration-300 cursor-pointer"
+                className="text-text-secondary text-sm hover:scale-105 transition-transform duration-300 cursor-pointer"
               >
                 Ver descricao do projeto →
               </Link>
-            </div>
+           
+            </div>  
           </div>
         ))}
       </div>
