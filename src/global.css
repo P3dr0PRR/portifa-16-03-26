@@ -38,4 +38,7 @@ html {
   .sec-label {
     @apply  text-text-secondary font-bold;
   }
+  .span-skills{ 
+    @apply px-3 py-1 rounded-md text-sm border transition-colors duration-200;
+  }
 }
