@@ -11,9 +11,9 @@ export function Home() {
     <div>
       <Nav />
       <section className="px-4 pt-18 md:pt-4 flex flex-col bg-[#050a14]">
-        <Hero />
-        {/* <About />
-        <ProjectsPreview />
+        {/* <Hero /> */}
+        <About />
+        {/* <ProjectsPreview />
         <Habilidades />
         <Contato /> */}
       </section>

@@ -33,3 +33,9 @@ html {
     @apply font-montserrat antialiased;
   }
 }
+
+@layer components {
+  .sec-label {
+    @apply  text-text-secondary font-bold;
+  }
+}
