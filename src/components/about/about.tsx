@@ -6,7 +6,7 @@ export function About() {
       id="sobre"
       className="flex flex-col justify-start gap-4 px-6 py-12 md:px-16 md:py-20"
     >
-      <p className="font-bold text-text-secondary">Sobre mim</p>
+      <p className="sec-label">Sobre mim</p>
       <h2 className="lg:text-5xl text-text-default">
         Quem está por trás do código ?
       </h2>
