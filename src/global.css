@@ -24,10 +24,10 @@ html {
     @apply text-[24px] md:text-[40px] leading-[120%] font-bold font-syne;
   }
   h3 {
-    @apply text-[14px] md:text-[16px] leading-[125%] font-semibold  font-syne;
+    @apply text-[14px] md:text-[16px] leading-[125%] font-semibold font-syne;
   }
   p {
-    @apply text-[14px] md:text-[16px] leading-[170%] max-w-[65ch]  font-montserrat;
+    @apply text-[14px] md:text-[16px] leading-[170%] max-w-[65ch] font-montserrat;
   }
   body {
     @apply font-montserrat antialiased;

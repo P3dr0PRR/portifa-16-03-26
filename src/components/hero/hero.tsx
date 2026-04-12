@@ -9,20 +9,20 @@ export function Hero() {
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
           <span className="relative inline-flex h-2 w-2 rounded-full bg-indigo-400"></span>
         </span>
-        <span className="text-sm text-indigo-400">
+        <span className="text-sm text-text-secondary">
           Disponível para oportunidades
         </span>
       </div>
 
-      <h2 className="text-4xl md:text-5xl font-bold font-['Syne'] text-white max-w-xl leading-tight">
+      <h2 className="max-w-xl text-text-default">
         Construindo interfaces que
         <br />
-        <span className="text-5xl md:text-6xl text-indigo-400">
+        <span className="text-5xl md:text-6xl text-text-secondary">
           fazem sentido
         </span>
       </h2>
 
-      <p className="text-gray-300 max-w-lg font-['DM Sans'] font-light leading-relaxed">
+      <p className="text-text-default font-light ">
         Sou desenvolvedor front-end com foco em JavaScript e React, apaixonado
         por criar interfaces limpas, funcionais e responsivas. Evoluo todos os
         dias através de prática real, estudos constantes e projetos próprios.
@@ -31,13 +31,13 @@ export function Hero() {
       <div className="flex gap-4">
         <a
           href="#projetos"
-          className="bg-gray-900 hover:bg-gray-700 flex items-center justify-center border-2 border-gray-500 text-white font-bold py-2 px-4 rounded-md transition duration-300 hover:scale-105"
+          className="bg-gray-900 hover:bg-gray-700 flex items-center justify-center border-2 border-gray-500 text-text-default font-bold py-2 px-4 rounded-md transition duration-300 hover:scale-105"
         >
           Ver projetos
         </a>
         <a
           href="#contato"
-          className="bg-gray-900 hover:bg-gray-700 flex items-center justify-center border-2 border-gray-500 text-white font-bold py-2 px-4 rounded-md transition duration-300 hover:scale-105"
+          className="bg-gray-900 hover:bg-gray-700 flex items-center justify-center border-2 border-gray-500 text-text-default font-bold py-2 px-4 rounded-md transition duration-300 hover:scale-105"
         >
           Entre em contato
         </a>
