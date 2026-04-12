@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export function Projs() {
   return (
     <section className="flex flex-col justify-start gap-4 px-6 py-12 md:px-16 md:py-20">
-      <p className="text-gray-300">{projects.length} projetos</p>
+      <p className="text-text-default">{projects.length} projetos</p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project: Project) => (
           <div
