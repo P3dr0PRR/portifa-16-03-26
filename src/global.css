@@ -41,4 +41,7 @@ html {
   .span-skills{ 
     @apply px-3 py-1 rounded-md text-sm border transition-colors duration-200;
   }
+  .ctt-meios{
+    @apply font-bold text-text-secondary text-center;
+  }
 }
