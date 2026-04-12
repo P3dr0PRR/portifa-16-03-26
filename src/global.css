@@ -32,16 +32,19 @@ html {
   body {
     @apply font-montserrat antialiased;
   }
+  footer {
+    @apply w-full py-6 text-center text-gray-400 text-sm bg-black border-t border-gray-700;
+  }
 }
 
 @layer components {
   .sec-label {
-    @apply  text-text-secondary font-bold;
+    @apply text-text-secondary font-bold;
   }
-  .span-skills{ 
+  .span-skills {
     @apply px-3 py-1 rounded-md text-sm border transition-colors duration-200;
   }
-  .ctt-meios{
+  .ctt-meios {
     @apply font-bold text-text-secondary text-center;
   }
 }
