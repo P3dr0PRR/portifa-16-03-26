@@ -18,9 +18,17 @@ export function ProjectsPreview() {
             }`}
           >
             <div className="flex flex-col gap-2 w-full">
-              <span className="text-text-secondary text-xs uppercase tracking-widest">
-                {project.type}
-              </span>
+              <div className="flex justify-between w-full">
+                <span className="text-text-secondary text-xs uppercase tracking-widest">
+                  {project.category}
+                </span>
+                <div className="flex items-center gap-2">
+                  <span className="bg-green-500 rounded-full w-4 h-4"></span>
+                  <span className="text-text-default font-light leading-relaxed">
+                    {project.status}
+                  </span>
+                </div>
+              </div>
               <h3 className="text-2xl font-bold">{project.name}</h3>
               <p className="text-text-default">{project.description}</p>
             </div>

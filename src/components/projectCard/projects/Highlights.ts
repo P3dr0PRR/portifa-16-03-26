@@ -6,6 +6,7 @@ export type HighlightType =
 
 export interface Highlight {
   slug: string;
+  category: string;
   type: HighlightType;
   name: string;
   description: string;
@@ -22,6 +23,7 @@ export interface Highlight {
 
 export const projects: Highlight[] = [
   {
+    category: "Front-End",
     type: "DESTAQUE",
     name: "ClipMaker",
     description:
@@ -54,6 +56,7 @@ export const projects: Highlight[] = [
     tipo: "projeto de curso · NLW Rocketseat",
   },
   {
+    category: "Front-End",
     type: "APLICACAO_WEB",
     name: "Best Trip Methods",
     description:
@@ -78,6 +81,7 @@ export const projects: Highlight[] = [
     tipo: "Projeto de minha autoria, aprendendo React por conta própria",
   },
   {
+    category: "Front-End",
     type: "APLICACAO_WEB",
     name: "Formulário de Matrícula",
     description:
@@ -103,6 +107,7 @@ export const projects: Highlight[] = [
     tipo: "Projeto autoral para prática de React e TypeScript",
   },
   {
+    category: "Front-End",
     type: "DESTAQUE",
     name: "Zingen",
     description:
@@ -131,7 +136,7 @@ export const projects: Highlight[] = [
     img: "/imgs/ZIngen.png",
     about:
       "Zingen é um MVP focado em democratizar o acesso ao karaokê através de uma plataforma web moderna. A aplicação combina uma biblioteca expansível de músicas com tecnologia de remoção de voz por IA, permitindo que qualquer pessoa cante suas músicas favoritas sem barreiras. O projeto foi construído com foco em UX, oferecendo planos diferenciados (básico gratuito e premium) e uma interface intuitiva. A arquitetura garante escalabilidade para futuras features como social sharing, histórico de gravações, desafios entre usuários e integração com redes sociais.",
-    status: "Em Desenvolvimento",
+    status: "Online",
     ano: 2026,
     tipo: "projeto pessoal · prática de React + TypeScript",
   },
