@@ -66,6 +66,6 @@ html {
     @apply border border-gray-300 rounded-md;
   }
   .buttons {
-    @apply flex gap-4 p-6 border border-text-secondary text-text-default rounded-md cursor-pointer hover:scale-105 transition-transform duration-200 hover:border-2 focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2;
+    @apply flex gap-4 p-6 border flex items-center justify-center border-text-secondary text-text-default rounded-md cursor-pointer hover:scale-105 transition-transform duration-200 hover:border-2 focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2;
   }
 }

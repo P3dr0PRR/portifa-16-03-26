@@ -11,8 +11,8 @@ export function Projs() {
 
   return (
     <section className="flex flex-col justify-start gap-4 px-6 py-12 md:px-16 md:py-20">
-      <div className="flex justify-between items-center">
-        <button className="buttons" onClick={() => setFiltroAtivo("Todos")}>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 w-full">
+        <button className="buttons " onClick={() => setFiltroAtivo("Todos")}>
           Todos
         </button>
         <button className="buttons" onClick={() => setFiltroAtivo("Front-End")}>
