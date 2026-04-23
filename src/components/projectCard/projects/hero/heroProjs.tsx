@@ -10,14 +10,14 @@ export function HeroProjs() {
         </span>
       </h2>
 
-      {/* <p className="text-text-default">
+      <p className="text-text-default">
         Aqui tem parte do que já construí e coloquei no ar, interfaces,
         aplicações e experimentos. Além dos projetos publicados, domino CSS
         vanilla, JavaScript puro e Tailwind CSS, aplicados em projetos de estudo
         e prática diária e também estou indo rumo ao back-end para me tornar um
         desenvolvedor fullstack, ainda não tenho nada consolidado mas me empenho
         dia após dia.
-      </p> */}
+      </p>
     </section>
   );
 }
