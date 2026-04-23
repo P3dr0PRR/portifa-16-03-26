@@ -1,12 +1,33 @@
 import { projects, type Project } from "../../projectsectionTypes";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export function Projs() {
+  const [filtroAtivo, setFiltroAtivo] = useState("Todos");
+
+  const filtrado = projects.filter((p) =>
+    filtroAtivo === "Todos" ? true : p.category === filtroAtivo,
+  );
+
   return (
     <section className="flex flex-col justify-start gap-4 px-6 py-12 md:px-16 md:py-20">
-      <p className="text-text-default">{projects.length} projetos</p>
+      {/* <div className="flex justify-between items-center">
+        <button className="buttons" onClick={() => setFiltroAtivo("Todos")}>
+          Todos
+        </button>
+        <button className="buttons" onClick={() => setFiltroAtivo("Front-End")}>
+          Front-End
+        </button>
+        <button className="buttons" onClick={() => setFiltroAtivo("Back-End")}>
+          Back-End
+        </button>
+        <button className="buttons" onClick={() => setFiltroAtivo("FullStack")}>
+          FullStack
+        </button>
+      </div> */}
+      <p className="text-text-default">{filtrado.length} projetos</p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {projects.map((project: Project) => (
+        {filtrado.map((project: Project) => (
           <div
             key={project.name}
             className={`flex flex-col items-start justify-between bg-gray-800 border-2 border-gray-600 p-6 hover:border-l-indigo-400 text-white rounded-md gap-4 ${
