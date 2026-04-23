@@ -14,7 +14,18 @@ export function Projs() {
             }`}
           >
             <div className="flex flex-col gap-2 w-full">
-              <span className="project-card-type">{project.type}</span>
+              <span className="project-card-type text-xl">{project.type}</span>
+              <div className="flex justify-between w-full">
+                <span className="text-text-secondary text-xs uppercase tracking-widest">
+                  {project.category}
+                </span>
+                <div className="flex items-center gap-2">
+                  <span className="bg-green-500 rounded-full w-4 h-4"></span>
+                  <span className="text-text-default font-light leading-relaxed">
+                    {project.status}
+                  </span>
+                </div>
+              </div>
               <h3 className="project-card-name">{project.name}</h3>
               <p className="project-card-description">{project.description}</p>
             </div>
@@ -31,7 +42,7 @@ export function Projs() {
             </ul>
 
             <div className=" w-full flex flex-col md:flex-row items-center justify-between gap-4">
-                 <a
+              <a
                 href={project.link}
                 target="_blank"
                 rel="noreferrer"
@@ -48,8 +59,7 @@ export function Projs() {
               >
                 Ver descricao do projeto →
               </Link>
-           
-            </div>  
+            </div>
           </div>
         ))}
       </div>

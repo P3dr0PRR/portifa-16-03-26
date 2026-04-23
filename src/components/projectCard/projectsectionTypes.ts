@@ -8,6 +8,7 @@ export type ProjectType =
 export interface Project {
   slug: string;
   type: ProjectType;
+  category: string;
   name: string;
   description: string;
   techs: string[];
@@ -23,6 +24,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    category: "Front-End",
     type: "LANDING_PAGE",
     name: "Snitap - Landing Page de Patins",
     description:
@@ -57,6 +59,7 @@ export const projects: Project[] = [
     tipo: "Projeto autoral para prática de React, Tailwind CSS e animações web",
   },
   {
+    category: "Front-End",
     type: "DESTAQUE",
     name: "ClipMaker",
     description:
@@ -90,6 +93,7 @@ export const projects: Project[] = [
   },
 
   {
+    category: "Front-End",
     type: "APLICACAO_WEB",
     name: "Best Trip Methods",
     description:
@@ -115,6 +119,7 @@ export const projects: Project[] = [
   },
 
   {
+    category: "Front-End",
     type: "FRONT_END",
     name: "Travelgram",
     description:
@@ -140,6 +145,7 @@ export const projects: Project[] = [
   },
 
   {
+    category: "Front-End",
     type: "UI_FRONT_END",
     name: "Pagina de Receitas",
     description:
@@ -164,6 +170,7 @@ export const projects: Project[] = [
   },
 
   {
+    category: "Front-End",
     type: "UI_FRONT_END",
     name: "Portal de Notícias",
     description:
@@ -188,6 +195,7 @@ export const projects: Project[] = [
   },
 
   {
+    category: "Front-End",
     type: "APLICACAO_WEB",
     name: "Formulário de Matrícula",
     description:
@@ -213,6 +221,7 @@ export const projects: Project[] = [
     tipo: "Projeto autoral para prática de React e TypeScript",
   },
   {
+    category: "Front-End",
     type: "DESTAQUE",
     name: "Zingen",
     description:
@@ -241,11 +250,12 @@ export const projects: Project[] = [
     img: "/imgs/ZIngen.png",
     about:
       "Zingen é um MVP focado em democratizar o acesso ao karaokê através de uma plataforma web moderna. A aplicação combina uma biblioteca expansível de músicas com tecnologia de remoção de voz por IA, permitindo que qualquer pessoa cante suas músicas favoritas sem barreiras. O projeto foi construído com foco em UX, oferecendo planos diferenciados (básico gratuito e premium) e uma interface intuitiva. A arquitetura garante escalabilidade para futuras features como social sharing, histórico de gravações, desafios entre usuários e integração com redes sociais.",
-    status: "Em Desenvolvimento",
+    status: "Online",
     ano: 2026,
     tipo: "projeto pessoal · prática de React + TypeScript",
   },
   {
+    category: "Front-End",
     type: "DESTAQUE",
     name: "Doc Analyzer",
     description:
