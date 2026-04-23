@@ -11,7 +11,7 @@ export function Projs() {
 
   return (
     <section className="flex flex-col justify-start gap-4 px-6 py-12 md:px-16 md:py-20">
-      {/* <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center">
         <button className="buttons" onClick={() => setFiltroAtivo("Todos")}>
           Todos
         </button>
@@ -24,7 +24,7 @@ export function Projs() {
         <button className="buttons" onClick={() => setFiltroAtivo("FullStack")}>
           FullStack
         </button>
-      </div> */}
+      </div>
       <p className="text-text-default">{filtrado.length} projetos</p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {filtrado.map((project: Project) => (
