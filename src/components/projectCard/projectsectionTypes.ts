@@ -7,7 +7,6 @@ export type ProjectType =
 
 export interface Project {
   slug: string;
-  type: ProjectType;
   category: string;
   name: string;
   description: string;
@@ -25,7 +24,6 @@ export interface Project {
 export const projects: Project[] = [
   {
     category: "Front-End",
-    type: "LANDING_PAGE",
     name: "Snitap - Landing Page de Patins",
     description:
       "Landing page moderna e responsiva para marca de patins, com animações suaves, galeria de fotos interativa e design system completo com Tailwind CSS.",
@@ -60,7 +58,6 @@ export const projects: Project[] = [
   },
   {
     category: "Front-End",
-    type: "DESTAQUE",
     name: "ClipMaker",
     description:
       "Plataforma web que transforma videos e audios em clipes virais automaticamente. O usuario envia o arquivo, a IA analisa a transcricao com Gemini e retorna o trecho mais impactante entre 30-60 segundos, ja recortado.",
@@ -94,7 +91,6 @@ export const projects: Project[] = [
 
   {
     category: "Front-End",
-    type: "APLICACAO_WEB",
     name: "Best Trip Methods",
     description:
       "Quiz inteligente que recomenda o melhor meio de transporte para uma viagem com base em 15 perguntas sobre distancia, orcamento, conforto e preferencias.",
@@ -120,7 +116,6 @@ export const projects: Project[] = [
 
   {
     category: "Front-End",
-    type: "FRONT_END",
     name: "Travelgram",
     description:
       "Perfil de viajante em rede social ficticia. Componentizacao, galeria de destinos e layout responsivo com React 19 + TypeScript + Tailwind 4.",
@@ -146,7 +141,6 @@ export const projects: Project[] = [
 
   {
     category: "Front-End",
-    type: "UI_FRONT_END",
     name: "Pagina de Receitas",
     description:
       "Pagina de receita culinaria com foco em layout visual, organizacao de conteudo e responsividade. Interface moderna e semantica com utility-first CSS.",
@@ -171,7 +165,6 @@ export const projects: Project[] = [
 
   {
     category: "Front-End",
-    type: "UI_FRONT_END",
     name: "Portal de Notícias",
     description:
       "Portal de notícias com foco em layout editorial, organização de conteúdo em cards e responsividade. Interface moderna e semântica com utility-first CSS.",
@@ -196,7 +189,6 @@ export const projects: Project[] = [
 
   {
     category: "Front-End",
-    type: "APLICACAO_WEB",
     name: "Formulário de Matrícula",
     description:
       "Aplicação web para cadastro de alunos, responsável e endereço residencial, com validação de dados e etapas dinâmicas.",
@@ -222,7 +214,6 @@ export const projects: Project[] = [
   },
   {
     category: "Front-End",
-    type: "DESTAQUE",
     name: "Zingen",
     description:
       "Aplicação web de karaokê que utiliza IA para remover vozes de músicas e disponibilizar a maior biblioteca de instrumentais. O usuário acessa uma vasta coleção de músicas e pode cantar em tempo real, com opções de planos grátis e premium.",
@@ -256,7 +247,6 @@ export const projects: Project[] = [
   },
   {
     category: "Front-End",
-    type: "DESTAQUE",
     name: "Doc Analyzer",
     description:
       "Aplicação web que utiliza o Gemini (Google AI) para extrair informações de documentos PDF automaticamente. O usuário envia o arquivo, a IA analisa o conteúdo e retorna Nome, Data de Validade e Categoria extraídas com precisão.",

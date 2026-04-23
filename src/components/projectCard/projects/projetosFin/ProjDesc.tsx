@@ -14,7 +14,6 @@ export function Projs() {
             }`}
           >
             <div className="flex flex-col gap-2 w-full">
-              <span className="project-card-type text-xl">{project.type}</span>
               <div className="flex justify-between w-full">
                 <span className="text-text-secondary text-xs uppercase tracking-widest">
                   {project.category}

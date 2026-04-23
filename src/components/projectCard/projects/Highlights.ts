@@ -7,7 +7,6 @@ export type HighlightType =
 export interface Highlight {
   slug: string;
   category: string;
-  type: HighlightType;
   name: string;
   description: string;
   techs: string[];
@@ -24,7 +23,6 @@ export interface Highlight {
 export const projects: Highlight[] = [
   {
     category: "Front-End",
-    type: "DESTAQUE",
     name: "ClipMaker",
     description:
       "Plataforma web que transforma videos e audios em clipes virais automaticamente. O usuario envia o arquivo, a IA analisa a transcricao com Gemini e retorna o trecho mais impactante entre 30-60 segundos, ja recortado.",
@@ -57,7 +55,6 @@ export const projects: Highlight[] = [
   },
   {
     category: "Front-End",
-    type: "APLICACAO_WEB",
     name: "Best Trip Methods",
     description:
       "Quiz inteligente que recomenda o melhor meio de transporte para uma viagem com base em 15 perguntas sobre distancia, orcamento, conforto e preferencias.",
@@ -82,7 +79,6 @@ export const projects: Highlight[] = [
   },
   {
     category: "Front-End",
-    type: "APLICACAO_WEB",
     name: "Formulário de Matrícula",
     description:
       "Aplicação web para cadastro de alunos, responsável e endereço residencial, com validação de dados e etapas dinâmicas.",
@@ -108,7 +104,6 @@ export const projects: Highlight[] = [
   },
   {
     category: "Front-End",
-    type: "DESTAQUE",
     name: "Zingen",
     description:
       "Aplicação web de karaokê que utiliza IA para remover vozes de músicas e disponibilizar a maior biblioteca de instrumentais. O usuário acessa uma vasta coleção de músicas e pode cantar em tempo real, com opções de planos grátis e premium.",
