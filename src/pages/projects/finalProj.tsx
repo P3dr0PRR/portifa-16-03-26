@@ -34,7 +34,7 @@ export function ProjectDetailsPage() {
       <HeaderFinalProj />
       <div className="min-h-screen bg-black text-text-default px-6 py-20 md:px-16 space-y-8">
         <div className="flex items-center gap-2 bg-indigo-500/40 border border-indigo-400 rounded-md p-2 w-max">
-          <p className="text-text-secondary">Destaque</p>
+          <p className="text-text-secondary">{project.category}</p>
         </div>
         <span className="span-proj-name">{project.name}</span>
         <p>{project.description}</p>
@@ -46,14 +46,12 @@ export function ProjectDetailsPage() {
               className="w-full h-auto block rounded-md p-2"
             />
           )}
-          <div className="hidden md:block absolute bottom-0 left-0 py-4 px-8 z-10">
-            <div className="flex items-center gap-2 bg-emerald-500/40 border border-emerald-400 rounded-md p-2 w-max">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400"></span>
-              </span>
-              <span className="online">Online</span>
-            </div>
+          <div className="flex items-center gap-2 bg-emerald-500/40 border border-emerald-400 rounded-md p-2 w-max mt-4">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400"></span>
+            </span>
+            <span className="online">{project.status}</span>
           </div>
         </div>
 
@@ -67,7 +65,7 @@ export function ProjectDetailsPage() {
         <div className="flex flex-col md:flex-row gap-4 md:items-stretch">
           <div className="container-projs p-4 w-full flex-1">
             <h2 className="text-text-secondary">Stack técnica</h2>
-            <ul className="text-text-default font-light leading-relaxed ">
+            <ul className="text-text-default font-light leading-relaxed">
               {project.techs.map((tech) => (
                 <li
                   key={tech}
@@ -89,7 +87,7 @@ export function ProjectDetailsPage() {
                 href={project.link}
                 target="_blank"
                 rel="noreferrer"
-                className="group flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-text-secondary  font-light leading-relaxed hover:text-indigo-300 transition-colors"
+                className="group flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-text-secondary font-light leading-relaxed hover:text-indigo-300 transition-colors"
               >
                 <span className="font-semibold">Deploy</span>
                 <span className="text-text-default break-all md:text-right">
@@ -107,7 +105,7 @@ export function ProjectDetailsPage() {
               {project.aprendizado.map((tech) => (
                 <li
                   key={tech}
-                  className="inline-block text-text-default font-light leading-relaxed "
+                  className="inline-block text-text-default font-light leading-relaxed"
                 >
                   - {tech}
                 </li>
